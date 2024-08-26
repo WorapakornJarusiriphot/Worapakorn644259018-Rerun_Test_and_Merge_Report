@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-08-26T21:41:09.420695" rpa="false" schemaversion="5">
+<robot generator="Rebot 7.0.1 (Python 3.11.9 on win32)" generated="2024-08-26T22:10:06.742503" rpa="false" schemaversion="5">
 <suite id="s1" name="Ts1 Google Search" source="D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\2024-08-19 Monday 19 August 2024\robot-rerun\ts1_google_search.robot">
 <test id="s1-t1" name="Search Google and Verify Results TC1001" line="15">
 <kw name="Open Google">
@@ -154,65 +154,64 @@
 <test id="s1-t4" name="Search Google and Check Results TC1004" line="42">
 <kw name="Open Google">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-08-26T21:41:34.391732" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<msg time="2024-08-26T22:02:22.295165" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
 <arg>https://www.google.com</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-26T21:41:34.391732" elapsed="1.562944"/>
+<status status="PASS" start="2024-08-26T22:02:22.294167" elapsed="2.934377"/>
 </kw>
-<status status="PASS" start="2024-08-26T21:41:34.390730" elapsed="1.564948"/>
+<status status="PASS" start="2024-08-26T22:02:22.293166" elapsed="2.936399"/>
 </kw>
 <kw name="Input Search Keyword">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-26T21:41:35.960745" level="INFO">Typing text 'npru' into text field 'name=q'.</msg>
+<msg time="2024-08-26T22:02:25.234572" level="INFO">Typing text 'npru' into text field 'name=q'.</msg>
 <arg>name=q</arg>
 <arg>${SEARCH_KEYWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-26T21:41:35.960745" elapsed="1.440285"/>
+<status status="PASS" start="2024-08-26T22:02:25.233565" elapsed="0.237055"/>
 </kw>
-<status status="PASS" start="2024-08-26T21:41:35.959834" elapsed="1.442192"/>
+<status status="PASS" start="2024-08-26T22:02:25.232562" elapsed="0.238058"/>
 </kw>
 <kw name="Enter Google Search">
 <kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-08-26T21:41:37.404029" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
-<msg time="2024-08-26T21:41:37.752726" level="INFO">Pressing special key ENTER to element.</msg>
-<msg time="2024-08-26T21:41:37.752726" level="INFO">Releasing special key ENTER.</msg>
+<msg time="2024-08-26T22:02:25.470620" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg time="2024-08-26T22:02:25.911441" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-08-26T22:02:25.911441" level="INFO">Releasing special key ENTER.</msg>
 <arg>name=q</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-08-26T21:41:37.403030" elapsed="2.069267"/>
+<status status="PASS" start="2024-08-26T22:02:25.470620" elapsed="2.201501"/>
 </kw>
-<status status="PASS" start="2024-08-26T21:41:37.402026" elapsed="2.070271"/>
+<status status="PASS" start="2024-08-26T22:02:25.470620" elapsed="2.201501"/>
 </kw>
 <kw name="Verify Search Result Keyword">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-08-26T21:41:40.340998" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-08-26T21:41:40.356624" level="FAIL">Page should have contained text 'engineer' but did not.</msg>
+<msg time="2024-08-26T22:02:27.767716" level="INFO">Current page contains text 'University'.</msg>
 <arg>${SEARCH_RESULT_KEYWORD}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2024-08-26T21:41:39.474299" elapsed="0.988848">Page should have contained text 'engineer' but did not.</status>
+<status status="PASS" start="2024-08-26T22:02:27.673117" elapsed="0.094599"/>
 </kw>
-<status status="FAIL" start="2024-08-26T21:41:39.473291" elapsed="0.989856">Page should have contained text 'engineer' but did not.</status>
+<status status="PASS" start="2024-08-26T22:02:27.673117" elapsed="0.094599"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-08-26T21:41:40.466143" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-26T22:02:27.768716" elapsed="2.306313"/>
 </kw>
 <doc>Test case to search Google and verify results</doc>
 <tag>search</tag>
-<status status="FAIL" start="2024-08-26T21:41:34.389731" elapsed="6.077418">Page should have contained text 'engineer' but did not.</status>
+<status status="PASS" start="2024-08-26T22:02:22.292168" elapsed="7.783860">*HTML* &lt;span class="merge"&gt;Test has been re-executed and results merged.&lt;/span&gt;&lt;hr&gt;&lt;span class="new-status"&gt;New status:&lt;/span&gt; &lt;span class="pass"&gt;PASS&lt;/span&gt;&lt;br&gt;&lt;hr&gt;&lt;span class="old-status"&gt;Old status:&lt;/span&gt; &lt;span class="fail"&gt;FAIL&lt;/span&gt;&lt;br&gt;&lt;span class="old-message"&gt;Old message:&lt;/span&gt; Page should have contained text 'engineer' but did not.&lt;br&gt;</status>
 </test>
-<status status="FAIL" start="2024-08-26T21:41:09.424695" elapsed="31.044445"/>
+<status status="PASS" elapsed="31.044445"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="1" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="3" fail="1" skip="0">search</stat>
+<stat pass="4" fail="0" skip="0">search</stat>
 </tag>
 <suite>
-<stat pass="3" fail="1" skip="0" id="s1" name="Ts1 Google Search">Ts1 Google Search</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="Ts1 Google Search">Ts1 Google Search</stat>
 </suite>
 </statistics>
 <errors>
